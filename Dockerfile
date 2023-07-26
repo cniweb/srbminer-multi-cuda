@@ -1,4 +1,5 @@
-FROM nvidia/cuda:11.0.3-runtime-ubuntu18.04
+#FROM nvidia/cuda:11.0.3-runtime-ubuntu18.04
+FROM nvidia/cuda:11.8.0-runtime-ubuntu22.04
 
 ENV ALGO="yespoweric"
 ENV POOL_ADDRESS="stratum+tcp://yespowerIC.na.mine.zergpool.com:6238"
