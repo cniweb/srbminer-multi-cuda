@@ -7,7 +7,8 @@ ENV PASSWORD="c=LTC,ID=docker"
 ENV EXTRAS="--api-enable --api-port 80 --disable-auto-affinity --disable-ptx-check"
 
 RUN apt-get -y update \
-    && apt-get -y install curl xz-utils \
+    && apt-get -y upgrade \
+    && apt-get -y install curl wget xz-utils \
     && cd /opt \
     && curl -L https://github.com/doktor83/SRBMiner-Multi/releases/download/2.3.9/SRBMiner-Multi-2-3-9-Linux.tar.xz -o SRBMiner-Multi.tar.xz \
     && tar xf SRBMiner-Multi.tar.xz \
